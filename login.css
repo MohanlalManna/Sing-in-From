@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, #f6efa7, #ff0078, rgb(28, 9, 1));
+    
+}
+h2{
+   
+	background:linear-gradient(90deg,red,blue);
+	font-size: 50px;
+	text-align: center;
+	-webkit-background-clip: text;
+	-webkit-text-stroke:0.09em transparent;
+	color:lightyellow;
+				
+}
+
+.log-in{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+    height: 350px;
+    background: linear-gradient(180deg, #f6efa7, #ff0078, rgb(82, 27, 4));
+    box-shadow: 10px 10px 20px 5px rgba(0,0,0,.5 );
+}
+.sing-in{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+    height: 400px;
+    background: linear-gradient(180deg, #f6efa7, #ff0078, rgb(82, 27, 4));
+    box-shadow: 10px 10px 20px 5px rgba(0,0,0,.5 );
+}
+
+.user-box {
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+ .user-box input{
+    margin-left: 20px;
+    width: 90%;
+    height: 40px;
+    padding: 5px;
+    font-size: 20px;
+    background: linear-gradient(-60deg,  #e685b2, rgb(98, 39, 70));
+    border-left: 3px solid rgb(20, 1, 11);
+    border-bottom: 4px solid rgb(20, 1, 11);
+    border-radius: 5px;
+    color:rgb(218, 208, 231);
+    outline: none;
+
+}
+    .user-box label{
+       color: white;
+         font-size: 20px;
+            font-weight: bold;
+            position:absolute;
+    top: 8px;
+    left: 20px;
+            padding: 0px 8px;
+            font-size: 20px;
+            color: #fff;
+            pointer-events: none;
+            transition: 0.5s;
+    }
+
+.user-box input:focus ~ label,
+.user-box input:valid ~ label {
+    top: -25px;
+    left: 15px;
+    font-size: 20px;
+    color: #200e69;
+
+}
+
+ .button input{
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 20%;
+    height: 40px;
+    font-size: 20px;
+    background: linear-gradient(-60deg,  #bfc720, rgb(9, 88, 38));
+    border-radius: 5px;
+    color:rgb(218, 208, 231);
+    outline: none;
+    cursor: pointer;
+    border: none;
+    transition: background 0.5s, box-shadow 0.5s;
+}
+
+.button input:focus {
+    background: linear-gradient(-60deg, rgb(9, 88, 38), #bfc720);
+  
+    box-shadow: 0 0 5px #a7f21c,
+            0 0 25px #ebf04f,
+            0 0 50px #dff081,
+            0 0 10px #dbe99c;
+}
+.login-button{
+    position: relative;
+    left: 30px;
+    top: -40px;
+   
+}
+.login-button a{
+    text-decoration: none;
+    color: rgb(175, 212, 244);
+    text-decoration: underline;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 2px;
+    transition: 0.5s;
+    opacity: .7;
+}
+
+.singin-button{
+    position: relative;
+    left: 30px;
+    top: -60px;
+   
+}
+.singin-button a{
+    text-decoration: none;
+    color: rgb(175, 212, 244);
+    text-decoration: underline;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 2px;
+    transition: 0.5s;
+    opacity: .7;
+}
