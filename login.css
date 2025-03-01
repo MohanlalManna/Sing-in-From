@@ -30,6 +30,7 @@ h2{
 
 .log-in{
     position: absolute;
+    overflow: hidden;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -38,7 +39,7 @@ h2{
     background: linear-gradient(180deg, #f6efa7, #ff0078, rgb(82, 27, 4));
     box-shadow: 10px 10px 20px 5px rgba(0,0,0,.5 );
 }
-.sing-in{
+.sing-up{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -108,7 +109,9 @@ h2{
     cursor: pointer;
     border: none;
     transition: background 0.5s, box-shadow 0.5s;
-}
+    
+   }
+
 
 .button input:focus {
     background: linear-gradient(-60deg, rgb(9, 88, 38), #bfc720);
@@ -118,13 +121,33 @@ h2{
             0 0 50px #dff081,
             0 0 10px #dbe99c;
 }
-.login-button{
+.button {
+    position: relative;
+    overflow: hidden;
+   
+}
+
+ .button span:nth-child(1) {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 0;
+    left: -100%;
+    background: linear-gradient(90deg, transparent, #03f484);
+    animation: btn-anim1 1s linear infinite;
+    animation-delay: 0.25s;
+}
+
+
+
+/*change to other page*/
+.login-option{
     position: relative;
     left: 30px;
     top: -40px;
    
 }
-.login-button a{
+.login-option a{
     text-decoration: none;
     color: rgb(175, 212, 244);
     text-decoration: underline;
@@ -135,13 +158,13 @@ h2{
     opacity: .7;
 }
 
-.singin-button{
+.singin-option{
     position: relative;
     left: 30px;
     top: -60px;
    
 }
-.singin-button a{
+.singin-option a{
     text-decoration: none;
     color: rgb(175, 212, 244);
     text-decoration: underline;
